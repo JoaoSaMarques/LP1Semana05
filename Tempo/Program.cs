@@ -8,7 +8,7 @@ namespace Tempo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Stopwatch crono1 = new Stopwatch();
         }
     }
 }
