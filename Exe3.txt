@@ -1,0 +1,14 @@
+NPC:
+
+Estados:
+- Vida
+- Invulnerablidade (Para não ser atacado pelo jogador)
+- Se está vivo ou morto
+- Velocidade
+- Pacifico ou Hóstil 
+
+Ações: 
+- Virar (Para o jogador)
+- Correr (de um inimigo)
+- Atacar (pode ser um guarda ou party member)
+
