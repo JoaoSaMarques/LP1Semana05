@@ -23,6 +23,10 @@ namespace Tempo
 
             //Faz pausa ao programa por 0,3 segundos
             Thread.Sleep(300);
+
+            // Pára contagem do tempo nos dois cronômetros
+            crono1.Stop();
+            crono2.Stop();
         }
     }
 }
