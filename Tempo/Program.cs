@@ -24,9 +24,13 @@ namespace Tempo
             //Faz pausa ao programa por 0,3 segundos
             Thread.Sleep(300);
 
-            // Pára contagem do tempo nos dois cronômetros
+            //Pára contagem do tempo nos dois cronômetros
             crono1.Stop();
             crono2.Stop();
+
+            //Tempo decorrido do crono
+            Console.WriteLine("Tempo decorrido em crono1: {0:F2} segundos", 
+            crono1.ElapsedMilliseconds / 1000.0);
         }
     }
 }
