@@ -31,6 +31,8 @@ namespace Tempo
             //Tempo decorrido do crono
             Console.WriteLine("Tempo decorrido em crono1: {0:F2} segundos", 
             crono1.ElapsedMilliseconds / 1000.0);
+            Console.WriteLine("Tempo decorrido em crono2: {0:F2} segundos", 
+            crono2.ElapsedMilliseconds / 1000.0);
         }
     }
 }
