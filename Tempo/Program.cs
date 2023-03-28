@@ -20,6 +20,9 @@ namespace Tempo
 
             //Inicia contagem 2 
             crono2.Start();
+
+            //Faz pausa ao programa por 0,3 segundos
+            Thread.Sleep(300);
         }
     }
 }
