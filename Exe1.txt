@@ -1,9 +1,0 @@
-1. Falso. Os conteúdos da stack só podem ser acedidos dentro do seu respetivo contexto ou função.
-2. Verdadeiro. A stack é responsável por manter as variáveis locais de uma função.
-3. Verdadeiro. Os conteúdos de um tipo de valor podem estar na heap, dependendo do caso.
-4. Falso. Os conteúdos de um tipo de valor são normalmente colocados na stack, exceto em alguns casos em que podem ser alocados na heap.
-5. Verdadeiro. Os conteúdos de um tipo de referência são sempre colocados na heap.
-6. Falso. O garbage collector (gc) só limpa memória na heap, não na stack.
-7. Falso. Não é possível atribuir null a tipos de valor, apenas a tipos de referência.
-8. Verdadeiro. Sendo a e b tipos de referência que referenciam o mesmo objeto, modificar os conteúdos de a irá alterar também os conteúdos de b.
-9. Falso. Sendo a e b tipos de valor com o mesmo valor, modificar a não irá alterar b.
