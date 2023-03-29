@@ -28,10 +28,13 @@ namespace Tempo
             crono1.Stop();
             crono2.Stop();
 
-            //Tempo decorrido do crono
-            Console.WriteLine("Tempo decorrido em crono1: {0:F2} segundos", 
+            //Tempo decorrido do crono1
+            Console.WriteLine("Tempo decorrido no crono1 em segundos", 
+            //1000 = a um segundo em milisegundos
             crono1.ElapsedMilliseconds / 1000.0);
-            Console.WriteLine("Tempo decorrido em crono2: {0:F2} segundos", 
+            //Tempo decorrido do crono2
+            Console.WriteLine("Tempo decorrido no crono2 em segundos", 
+            //1000 = a um segundo em milisegundos
             crono2.ElapsedMilliseconds / 1000.0);
         }
     }
