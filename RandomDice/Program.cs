@@ -15,7 +15,7 @@ namespace RandomDice
             int sum = 0;
 
             //Temos que criar um valor entre 1 e 6 para cada dado lançado.
-            Random value = new Random()
+            Random value = new Random();
 
             //Vai deixar-nos fazer um limitador entre 1 e 6.
             for (int i = 0; i < n; i++)
