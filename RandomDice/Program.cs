@@ -6,7 +6,10 @@ namespace RandomDice
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            //Valor do número vai ser utilizado para o resto do programa.
+            Console.WriteLine("Input the number of the dice: ");
+            //Converter a string em inteiro.
+            int n = int.Parse(Console.ReadLine());
         }
     }
 }
