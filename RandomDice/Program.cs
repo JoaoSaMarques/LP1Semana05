@@ -20,8 +20,13 @@ namespace RandomDice
             //Vai deixar-nos fazer um limitador entre 1 e 6.
             for (int i = 0; i < n; i++)
             {
-                int dice = 
+                //Random value for each dice.
+                int dice = value.Next(1, 6);
+                //0 + Dice values
+                sum = sum + dice; 
             }
+            //Sum of all dice
+            Console.WriteLine("The sum of the dice are: " + sum);
         }
     }
 }
