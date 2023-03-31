@@ -6,7 +6,10 @@ namespace UpperUnion
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            //User order.
+            Console.WriteLine("Write a sentence");
+            //Convert string to uppercase
+            string s = ToUpper(Console.ReadLine())
         }
     }
 }
