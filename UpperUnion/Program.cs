@@ -32,7 +32,7 @@ namespace UpperUnion
             sb.Append(charX);
             
             //Add - To each sentence
-            sb.Replace(' ', '-');
+            sb.AppendJoin("-", sb.Length);
 
             //Print entire sentence.
             Console.WriteLine("{0} chars: {1}", sb.Length, sb.ToString());
