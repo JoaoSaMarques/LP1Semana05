@@ -1,5 +1,6 @@
 using System;
 using System.Linq;
+using System.Text;
 
 namespace UpperUnion
 {
@@ -15,29 +16,31 @@ namespace UpperUnion
                 return;
             }
 
-            //Inform the user it will be converted to uppercase.
-            Console.WriteLine("The following is your sentence in uppercase: ");
-
             //Convert args to uppercase and into an editable array.
             string[] argsUppercase = args.Select(arg => arg.ToUpper()).ToArray();
-
-            //Make a copy of argsUppercase
-            string[] sorter = (argsUppercase);
             
             //Sort array with uppercase letters.
             Array.Sort(argsUppercase);
 
-            //Sort Array in alphabetical order.
-            Array.Sort(sorter);
+            //Build new String.
+            StringBuilder sb = new StringBuilder();
+            //For every word.
+            foreach (string word in argsUppercase)
+            {
+                //Word.
+                sb.Append(word);
+                //Put "-" between each word.
+                sb.Append("-");
+            }
 
-            //Join every string with "-"
-            string Final = string.Join("-", argsUppercase);
+            //Remove the last "-" character from the StringBuilder.
+            sb.Remove(sb.Length - 1, 1);
+
+            //Final converts sb to printable.
+            string Final = sb.ToString();
 
             //Print the final sentence.
             Console.WriteLine(Final);
-            
-            //Print sorted sentence in alphabetical order
-            Console.WriteLine(sorter);
         }
     }
 }
