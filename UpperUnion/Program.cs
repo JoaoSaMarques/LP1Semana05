@@ -32,9 +32,11 @@ namespace UpperUnion
             sb.Append(charX);
             
             //Add - To each sentence
-            sb.Insert(1, " - ");
-            Console.WriteLine("{0} chars: {1}", sb.Length, sb.ToString());
+            sb.Replace(' ', '-');
 
+            //Print entire sentence.
+            Console.WriteLine("{0} chars: {1}", sb.Length, sb.ToString());
+            
             //Print upper version.
             Console.WriteLine(upperString);
             //Print alphabetical order.
