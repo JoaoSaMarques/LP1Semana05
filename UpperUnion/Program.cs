@@ -8,22 +8,19 @@ namespace UpperUnion
     {
         static void Main(string[] args)
         {
-            //User order.
-            Console.WriteLine("Write a sentence");
-            //Read string of user.
-            string string1 = (Console.ReadLine());
-
-            //Convert string to uppercase.
-            string upperString = string1.ToUpper();
-
-            //copy upperstring into a separate string.
-            string x = upperString;
-
-            //convert string x to char array
-            char[] charX = x.ToCharArray();
-
-            //Sort array alphabetically
-            Array.Sort(charX);
+            //list of string
+            string[] myargs = args;
+            //Copy and convert to upper and an array
+            string[] argsUpper = myargs.ToUpper().ToArray();
+            //Sort array
+            Array.Sort(myargs);
+            
+            //No arguments if args has no arguments
+            if (args.Length == 0)
+            {
+                Console.WriteLine("no arguments");
+                return;
+            }
 
             //Start creating a string for sb.
             StringBuilder sb = new StringBuilder(upperString, 50);
@@ -32,7 +29,7 @@ namespace UpperUnion
             sb.Append(charX);
             
             //Add - To each sentence
-            sb.AppendJoin("-", sb.Length);
+            sb.AppendJoin("-");
 
             //Print entire sentence.
             Console.WriteLine("{0} chars: {1}", sb.Length, sb.ToString());
