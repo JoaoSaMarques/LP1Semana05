@@ -1,4 +1,5 @@
-﻿using System;
+using System;
+
 
 namespace UpperUnion
 {
@@ -8,8 +9,12 @@ namespace UpperUnion
         {
             //User order.
             Console.WriteLine("Write a sentence");
+            //Read string of user.
+            string string1 = (Console.ReadLine());
             //Convert string to uppercase
-            string s = ToUpper(Console.ReadLine())
+            string upperString = string1.ToUpper();
+            //Print upper version
+            Console.WriteLine(upperString);
         }
     }
 }
