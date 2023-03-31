@@ -1,6 +1,5 @@
 using System;
-using System.Text;
-
+using System.Linq;
 
 namespace UpperUnion
 {
@@ -8,37 +7,37 @@ namespace UpperUnion
     {
         static void Main(string[] args)
         {
-            //list of string
-            string[] myargs = args;
-            //Copy and convert to upper and an array
-            string[] argsUpper = myargs.ToUpper().ToArray();
-            //Sort array
-            Array.Sort(myargs);
-            
-            //No arguments if args has no arguments
+            //If the user didn't write anything in args.
             if (args.Length == 0)
             {
+                //Print no arguments.
                 Console.WriteLine("no arguments");
                 return;
             }
 
-            //Start creating a string for sb.
-            StringBuilder sb = new StringBuilder(upperString, 50);
+            //Inform the user it will be converted to uppercase.
+            Console.WriteLine("The following is your sentence in uppercase: ");
 
-            //Add charX to the end of sb.
-            sb.Append(charX);
+            //Convert args to uppercase and into an editable array.
+            string[] argsUppercase = args.Select(arg => arg.ToUpper()).ToArray();
+
+            //Make a copy of argsUppercase
+            string[] sorter = (argsUppercase);
             
-            //Add - To each sentence
-            sb.AppendJoin("-");
+            //Sort array with uppercase letters.
+            Array.Sort(argsUppercase);
 
-            //Print entire sentence.
-            Console.WriteLine("{0} chars: {1}", sb.Length, sb.ToString());
+            //Sort Array in alphabetical order.
+            Array.Sort(sorter);
+
+            //Join every string with "-"
+            string Final = string.Join("-", argsUppercase);
+
+            //Print the final sentence.
+            Console.WriteLine(Final);
             
-            //Print upper version.
-            Console.WriteLine(upperString);
-            //Print alphabetical order.
-            Console.WriteLine(charX);
-
+            //Print sorted sentence in alphabetical order
+            Console.WriteLine(sorter);
         }
     }
 }
