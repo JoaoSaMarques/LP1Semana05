@@ -1,4 +1,5 @@
 using System;
+using System.Text;
 
 
 namespace UpperUnion
@@ -23,6 +24,16 @@ namespace UpperUnion
 
             //Sort array alphabetically
             Array.Sort(charX);
+
+            //Start creating a string for sb.
+            StringBuilder sb = new StringBuilder(upperString, 50);
+
+            //Add charX to the end of sb.
+            sb.Append(charX);
+            
+            //Add - To each sentence
+            sb.Insert(1, " - ");
+            Console.WriteLine("{0} chars: {1}", sb.Length, sb.ToString());
 
             //Print upper version.
             Console.WriteLine(upperString);
