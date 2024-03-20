@@ -2,11 +2,8 @@
 
 namespace MyGame
 {
-    class Program
+    public class Enemy
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello, World!");
-        }
+        
     }
 }
