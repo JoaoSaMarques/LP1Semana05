@@ -7,6 +7,7 @@ namespace MyGame
         public string name;
         public float health;
         public float shield;
+        private static int _totalPowerUpsCollected;
 
         public Enemy(string name)
         {
@@ -55,33 +56,46 @@ namespace MyGame
             }
         }
 
-            public void PickupPowerUp(PowerUp powerUp, float value)
+        public void PickupPowerUp(PowerUp powerUp, float value)
+        {
+            switch (powerUp)
             {
-                switch (powerUp)
-                {
-                    case PowerUp.Health:
-                        if (health + value > 100)
-                        {
-                            health = 100;
-                        }
-                        else
-                        {
-                            health += value;
-                        }
-                        break;
-                    case PowerUp.Shield:
-                        if (shield + value > 100)
-                        {
-                            shield = 100;
-                        }
-                        else
-                        {
-                            shield += value;
-                        }
-                        break;
-                    default:
-                        throw new ArgumentException("Invalid PowerUp type.");
-                }
+                case PowerUp.Health:
+                    if (health + value > 100)
+                    {
+                        health = 100;
+                    }
+                    else
+                    {
+                        health += value;
+                    }
+                    break;
+                case PowerUp.Shield:
+                    if (shield + value > 100)
+                    {
+                        shield = 100;
+                    }
+                    else
+                    {
+                        shield += value;
+                    }
+                    break;
+                default:
+                    throw new ArgumentException("Invalid PowerUp type.");  
+                    
             }
+
+            _totalPowerUpsCollected++;
+        }   
+
+        public static int TotalPowerUpsCollected
+        {
+            get { return _totalPowerUpsCollected; }
+        }
+
+        static Enemy()
+        {
+            _totalPowerUpsCollected = 0;
+        }
     }
 }
