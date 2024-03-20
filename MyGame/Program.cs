@@ -4,6 +4,12 @@ namespace MyGame
 {
     class Program
     {
+        public enum PowerUp
+        {
+            Health,
+            Shield
+        }
+        
         static void Main(string[] args)
         {
             if (args.Length == 0)
@@ -30,6 +36,8 @@ namespace MyGame
                 Console.WriteLine("Shield: " + currentEnemy.GetShield());
                 Console.WriteLine();
             }
+
+            
         }
     }
 }

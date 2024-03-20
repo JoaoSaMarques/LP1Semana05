@@ -55,5 +55,33 @@ namespace MyGame
             }
         }
 
+            public void PickupPowerUp(PowerUp powerUp, float value)
+            {
+                switch (powerUp)
+                {
+                    case PowerUp.Health:
+                        if (health + value > 100)
+                        {
+                            health = 100;
+                        }
+                        else
+                        {
+                            health += value;
+                        }
+                        break;
+                    case PowerUp.Shield:
+                        if (shield + value > 100)
+                        {
+                            shield = 100;
+                        }
+                        else
+                        {
+                            shield += value;
+                        }
+                        break;
+                    default:
+                        throw new ArgumentException("Invalid PowerUp type.");
+                }
+            }
     }
 }
