@@ -5,8 +5,8 @@ namespace MyGame
     public class Enemy
     {
         public string name;
-        public int health;
-        public int shield;
+        public float health;
+        public float shield;
 
         public Enemy(string name)
         {
