@@ -4,12 +4,6 @@ namespace MyGame
 {
     class Program
     {
-        public enum PowerUp
-        {
-            Health,
-            Shield
-        }
-        
         static void Main(string[] args)
         {
             if (args.Length == 0)
@@ -36,6 +30,22 @@ namespace MyGame
                 Console.WriteLine("Shield: " + currentEnemy.GetShield());
                 Console.WriteLine();
             }
+
+            Enemy enemy = enemies[0];
+            Console.WriteLine("Initial health: " + enemy.GetHealth());
+            Console.WriteLine("Initial shield: " + enemy.GetShield());
+
+            enemy.PickupPowerUp(PowerUp.Health, 50);
+            Console.WriteLine("Health after power-up: " + enemy.GetHealth());
+
+            enemy.TakeDamage(25);
+            Console.WriteLine("Health after damage: " + enemy.GetHealth());
+
+            enemy.PickupPowerUp(PowerUp.Shield, 75);
+            Console.WriteLine("Shield after power-up: " + enemy.GetShield());
+
+            enemy.TakeDamage(40);
+            Console.WriteLine("Shield after damage: " + enemy.GetShield());
 
             
         }
