@@ -10,7 +10,7 @@ namespace MyGame
 
         public Enemy(string name)
         {
-            this.name = name; // name is assigned to this.name
+            this.name = SetName(name); // name is assigned to this.name
             health = 100;
             shield = 0;
         }
