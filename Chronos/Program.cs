@@ -12,6 +12,7 @@ namespace Chronos
             Stopwatch crono2 = new Stopwatch();
 
             crono1.Start();
+            Thread.Sleep(600);
         }
     }
 }
