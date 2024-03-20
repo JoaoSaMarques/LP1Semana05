@@ -47,7 +47,7 @@ namespace MyGame
             enemy.TakeDamage(40);
             Console.WriteLine("Shield after damage: " + enemy.GetShield());
 
-            
+            Console.WriteLine("power-ups: " + Enemy.TotalPowerUpsCollected);
         }
     }
 }
