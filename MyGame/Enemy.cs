@@ -30,6 +30,19 @@ namespace MyGame
             return shield;
         }
 
+        public string SetName(string name)
+        {
+            if (name.Length > 8)
+            {
+                this.name = name.Substring(0, 8);
+            }
+            else
+            {
+                this.name = name;
+            }
+            return this.name;
+        }
+
         public void TakeDamage(float damage)
         {
             shield -= damage;
