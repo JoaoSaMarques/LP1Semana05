@@ -15,5 +15,10 @@ namespace MyGame
             shield = 0;
         }
 
+        public string GetName()
+        {
+            return name;
+        }
+
     }
 }
