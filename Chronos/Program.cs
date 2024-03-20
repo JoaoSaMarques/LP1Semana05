@@ -13,6 +13,8 @@ namespace Chronos
 
             crono1.Start();
             Thread.Sleep(600);
+
+            crono2.Start();
         }
     }
 }
