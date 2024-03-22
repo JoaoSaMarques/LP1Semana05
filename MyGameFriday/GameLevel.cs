@@ -35,6 +35,15 @@ namespace MyGameFriday
             _rooms[roomIndex] = enemy;
         }
 
-
+        public void PrintEnemies()
+        {
+            for (int i = 0; i < _rooms.Length; i++)
+            {
+                if (_rooms[i] != null)
+                {
+                    Console.WriteLine($"Room {i}: {_rooms[i].GetName()}");
+                }
+            }
+        }
     }
 }
