@@ -30,5 +30,11 @@ namespace MyGameFriday
             return _rooms.Count(r => r != null);
         }
 
+        public void SetEnemyInRoom(int roomIndex, Enemy enemy)
+        {
+            _rooms[roomIndex] = enemy;
+        }
+
+
     }
 }
