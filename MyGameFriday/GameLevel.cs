@@ -25,6 +25,10 @@ namespace MyGameFriday
             return _rooms.Length;
         }
 
+        public int GetNumEnemies()
+        {
+            return _rooms.Count(r => r != null);
+        }
 
     }
 }
