@@ -20,6 +20,11 @@ namespace MyGameFriday
             return _difficulty;
         }
 
+        public int GetNumRooms()
+        {
+            return _rooms.Length;
+        }
+
 
     }
 }
