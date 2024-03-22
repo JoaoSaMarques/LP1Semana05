@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MyGameFriday
+namespace MyGame
 {
     class Program
     {
