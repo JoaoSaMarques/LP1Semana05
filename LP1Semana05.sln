@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreatGame", "GreatGame\Grea
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LevelTwo", "LevelTwo\LevelTwo.csproj", "{C193F5D8-A717-4EA3-968C-358EC9FA7C28}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoGoodLib", "SoGoodLib\SoGoodLib.csproj", "{D3AD80F7-CE52-4652-927A-32985386CE0A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{C193F5D8-A717-4EA3-968C-358EC9FA7C28}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C193F5D8-A717-4EA3-968C-358EC9FA7C28}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C193F5D8-A717-4EA3-968C-358EC9FA7C28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3AD80F7-CE52-4652-927A-32985386CE0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3AD80F7-CE52-4652-927A-32985386CE0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3AD80F7-CE52-4652-927A-32985386CE0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3AD80F7-CE52-4652-927A-32985386CE0A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
