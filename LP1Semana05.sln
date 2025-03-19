@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LevelOne", "LevelOne\LevelOne.csproj", "{30F37D90-14A5-4D06-A8AF-39485AA11001}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreatGame", "GreatGame\GreatGame.csproj", "{40ABF288-31F7-49E2-A1F1-F471AA65F7C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{30F37D90-14A5-4D06-A8AF-39485AA11001}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30F37D90-14A5-4D06-A8AF-39485AA11001}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30F37D90-14A5-4D06-A8AF-39485AA11001}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40ABF288-31F7-49E2-A1F1-F471AA65F7C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40ABF288-31F7-49E2-A1F1-F471AA65F7C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40ABF288-31F7-49E2-A1F1-F471AA65F7C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40ABF288-31F7-49E2-A1F1-F471AA65F7C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
