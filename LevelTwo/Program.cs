@@ -1,5 +1,5 @@
 ﻿using Spectre.Console;
-using SoGoodLib;  // Adiciona esta linha para importar a biblioteca
+using SoGoodLib;
 using System;
 
 namespace LevelTwo
@@ -8,16 +8,34 @@ namespace LevelTwo
     {
         private static void Main(string[] args)
         {
-            // Chamar o método da biblioteca externa
+            // Mensagem da biblioteca externa
             Console.WriteLine(SoGoodClass.SoGoodMethod());
 
-            CanvasImage image = new CanvasImage("./tux.jpg"); 
+            // Definir valores padrão
+            string imagePath = "tux.jpg";
+            int maxWidth = 24;
 
-            // Set the max width of the image
-            image.MaxWidth(24);
+            // Processar argumentos da linha de comando
+            if (args.Length >= 1)
+            {
+                imagePath = args[0]; // Primeiro argumento é o caminho da imagem
+            }
+            if (args.Length >= 2 && int.TryParse(args[1], out int parsedWidth))
+            {
+                maxWidth = parsedWidth; // Segundo argumento define o tamanho
+            }
 
-            // Render the image to the console
-            AnsiConsole.Write(image);
+            // Criar a imagem e definir o tamanho
+            try
+            {
+                CanvasImage image = new CanvasImage(imagePath);
+                image.MaxWidth(maxWidth);
+                AnsiConsole.Write(image);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro ao carregar a imagem: {ex.Message}");
+            }
         }
     }
 }
