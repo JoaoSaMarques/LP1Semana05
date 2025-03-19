@@ -9,7 +9,7 @@ namespace LevelTwo
             CanvasImage image = new CanvasImage("tux.jpg");
 
             // Set the max width of the image
-            image.MaxWidth(20);
+            image.MaxWidth(24);
 
             // Render the image to the console
             AnsiConsole.Write(image);
