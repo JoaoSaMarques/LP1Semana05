@@ -6,7 +6,7 @@ namespace LevelOne
     {
         private static void Main(string[] args)
         {
-            Console.WriteLine("Method LP1!");
+            Console.WriteLine("New method LP1!");
         }
     }
 }
