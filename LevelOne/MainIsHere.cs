@@ -6,7 +6,7 @@ namespace LevelOne
     {
         private static void Main(string[] args)
         {
-            Console.WriteLine("Changed LP1!");
+            Console.WriteLine("Class LP1!");
         }
     }
 }
