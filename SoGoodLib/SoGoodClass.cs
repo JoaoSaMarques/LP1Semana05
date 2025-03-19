@@ -6,4 +6,9 @@ namespace SoGoodLib
     {
 
     }
+
+    public static string SoGoodMethod()
+    {
+        return "I came from another project!";
+    }
 }
